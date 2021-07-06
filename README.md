@@ -85,6 +85,6 @@ Após o temrmino da inicialização do container RabbitMQ, estará disponível n
 
 > O usuário e senha padrões são `guest`
 
-Após o login So dashboard será mostrado
+Após o login o dashboard será mostrado
 
 ![Dashboard RabbitMQ](https://image.prntscr.com/image/xVISsDA-QR2iCAdt9A8f7Q.png)
