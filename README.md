@@ -10,9 +10,9 @@
   - [Instalação com Docker e docker-compose](#markdown-header-instalação-com-docker-e-docker-compose)
     - [Acessando o painel RabbitMQ](#markdown-header-acessando-o-painel-rabbitmq)
 
-![Ilustracao](https://media.giphy.com/media/6pa2yJv88FhcRTwW2t/source.gif)
+![Ilustração](https://media.giphy.com/media/6pa2yJv88FhcRTwW2t/source.gif)
 
-[**RabbitMQ**](https://www.rabbitmq.com/) é um [message broker](https://en.wikipedia.org/wiki/Message_broker) projetado para comunicação entre aplicações - geralmente, microsserviços - servindo como um `middleware` entre multiplas aplicações, capaz de gerenciar e garantir o processamento de mensagens.
+[**RabbitMQ**](https://www.rabbitmq.com/) é um [message broker](https://en.wikipedia.org/wiki/Message_broker) projetado para comunicação entre aplicações - geralmente, microsserviços - servindo como um `middleware` entre múltiplas aplicações, capaz de gerenciar e garantir o processamento de mensagens.
 
 ## Etapas
 
@@ -45,7 +45,7 @@ Após a determinação da exchange, a mensagem prossegue para uma das filas asso
 
 ### Consumer
 
-O **Consumer** representa a aplicação no extremo do fluxo, que irá receber a mensagem. Ela é a responsável pro cumprir com sua funcinalidade de acordo com a mensagem enviada e finalizar enviando um `feedback` de volta para o RabbitMQ informando se a mensagem foi processada com sucesso ou rejeitada.
+O **Consumer** representa a aplicação no extremo do fluxo, que irá receber a mensagem. Ela é a responsável pro cumprir com sua funcionalidade de acordo com a mensagem enviada e finalizar enviando um `feedback` de volta para o RabbitMQ informando se a mensagem foi processada com sucesso ou rejeitada.
 
 ## Resumo
 
@@ -53,13 +53,13 @@ RabbitMQ possibilita que a arquitetura de um projeto não necessite de algum aco
 
 ## Instalação com [Docker](https://www.docker.com/products/docker-desktop) e docker-compose
 
-É possivel iniciar um container RabbitMQ usando um simples comando docker:
+É possível iniciar um container RabbitMQ usando um simples comando docker:
 
 ```sh
 docker run -d --hostname my-rabbit --name rabbit13 -p 8080:15672 -p 5672:5672 -p 25676:25676 rabbitmq:3-management
 ```
 
-ou é possivel iniciar uma `stack` com docker composer:
+ou é possível iniciar uma `stack` com docker composer:
 
 ```yaml
 version: "3"
@@ -75,13 +75,13 @@ services:
         - ./.docker-conf/rabbitmq/log/:/var/log/rabbitmq
 ```
 
-> Este arquivo está no repostório. é possível usar o comando `git clone` e usar o comando `docker-compose up`
+> Este arquivo está no repositório. é possível usar o comando `git clone` e usar o comando `docker-compose up`
 
 ### Acessando o painel RabbitMQ
 
 ![Login RabbitMQ](https://image.prntscr.com/image/rFG9dqNwR1_N4PwHpzftzQ.png)
 
-Após o temrmino da inicialização do container RabbitMQ, estará disponível na porta **15672** o acesso web ao painel do RabbitMQ.
+Após o termino da inicialização do container RabbitMQ, estará disponível na porta **15672** o acesso web ao painel do RabbitMQ.
 
 > O usuário e senha padrões são `guest`
 
