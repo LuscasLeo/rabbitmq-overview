@@ -1,8 +1,18 @@
 # 🐰 Introdução ao RabbitMQ 🐇
 
+- [🐰 Introdução ao RabbitMQ 🐇](#-introdução-ao-rabbitmq-)
+  - [Etapas](#etapas)
+    - [Publisher](#publisher)
+    - [Exchange](#exchange)
+    - [Queue](#queue)
+    - [Consumer](#consumer)
+  - [Resumo](#resumo)
+  - [Instalação com Docker e docker-compose](#instalação-com-docker-e-docker-compose)
+    - [Acessando o painel RabbitMQ](#acessando-o-painel-rabbitmq)
+
 ![Ilustracao](https://media.giphy.com/media/6pa2yJv88FhcRTwW2t/source.gif)
 
-[**RabbitMQ**](https://www.rabbitmq.com/) é u [message broker](https://en.wikipedia.org/wiki/Message_broker) projetado para comunicação entre aplicações - geralmente, microsserviços - servindo como um `middleware` entre multiplas aplicações, capaz de gerenciar e garantir o processamento de mensagens.
+[**RabbitMQ**](https://www.rabbitmq.com/) é um [message broker](https://en.wikipedia.org/wiki/Message_broker) projetado para comunicação entre aplicações - geralmente, microsserviços - servindo como um `middleware` entre multiplas aplicações, capaz de gerenciar e garantir o processamento de mensagens.
 
 ## Etapas
 
