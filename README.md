@@ -1,14 +1,14 @@
 # 🐰 Introdução ao RabbitMQ 🐇
 
-- [🐰 Introdução ao RabbitMQ 🐇](#-introdução-ao-rabbitmq-)
-  - [Etapas](#etapas)
-    - [Publisher](#publisher)
-    - [Exchange](#exchange)
-    - [Queue](#queue)
-    - [Consumer](#consumer)
-  - [Resumo](#resumo)
-  - [Instalação com Docker e docker-compose](#instalação-com-docker-e-docker-compose)
-    - [Acessando o painel RabbitMQ](#acessando-o-painel-rabbitmq)
+- [🐰 Introdução ao RabbitMQ 🐇](#markdown-header--introdução-ao-rabbitmq-)
+  - [Etapas](#markdown-header-etapas)
+    - [Publisher](#markdown-header-publisher)
+    - [Exchange](#markdown-header-exchange)
+    - [Queue](#markdown-header-queue)
+    - [Consumer](#markdown-header-consumer)
+  - [Resumo](#markdown-header-resumo)
+  - [Instalação com Docker e docker-compose](#markdown-header-instalação-com-docker-e-docker-compose)
+    - [Acessando o painel RabbitMQ](#markdown-header-acessando-o-painel-rabbitmq)
 
 ![Ilustracao](https://media.giphy.com/media/6pa2yJv88FhcRTwW2t/source.gif)
 
@@ -31,13 +31,13 @@ O sistema de mensageria funciona através de 4 etapas:
 
 É o momento em que a mensagem é criada por alguma aplicação conectada ao serviço **como um publisher** e envia uma mensagem.
 
-### Exchange ###
+### Exchange
 
 ![Exchange Illustration](https://image.prntscr.com/image/JVPHWmTiTfGtF2MrKbaeew.png)
 
 **Exchange** é o processo de pré-manipulação da mensagem onde, [dependendo da regra da exchange](https://lostechies.com/derekgreer/2012/03/28/rabbitmq-for-windows-exchange-types/) a mensagem pode passar por uma ou mais [filas associadas à exchange](https://www.rabbitmq.com/tutorials/tutorial-four-python.html).
 
-### Queue ###
+### Queue
 
 ![Queue Illustration](https://image.prntscr.com/image/ZO47-olATMuG0vv1Ty_hSg.png)
 
