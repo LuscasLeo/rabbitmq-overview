@@ -18,10 +18,10 @@
 
 O sistema de mensageria funciona através de 4 etapas:
 
-- [Publisher](#publisher)
-- [Exchange](#exchange)
-- [Queue](#queue)
-- [Consumer](#consumer)
+- [Publisher](#markdown-header-publisher)
+- [Exchange](#markdown-header-exchange)
+- [Queue](#markdown-header-queue)
+- [Consumer](#markdown-header-consumer)
 
 ### Publisher
 
