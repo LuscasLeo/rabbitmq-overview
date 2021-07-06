@@ -31,13 +31,13 @@ O sistema de mensageria funciona através de 4 etapas:
 
 É o momento em que a mensagem é criada por alguma aplicação conectada ao serviço **como um publisher** e envia uma mensagem.
 
-### Exchange
+### Exchange ###
 
 ![Exchange Illustration](https://image.prntscr.com/image/JVPHWmTiTfGtF2MrKbaeew.png)
 
 **Exchange** é o processo de pré-manipulação da mensagem onde, [dependendo da regra da exchange](https://lostechies.com/derekgreer/2012/03/28/rabbitmq-for-windows-exchange-types/) a mensagem pode passar por uma ou mais [filas associadas à exchange](https://www.rabbitmq.com/tutorials/tutorial-four-python.html).
 
-### Queue
+### Queue ###
 
 ![Queue Illustration](https://image.prntscr.com/image/ZO47-olATMuG0vv1Ty_hSg.png)
 
